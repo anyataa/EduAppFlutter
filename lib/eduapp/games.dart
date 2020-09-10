@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/eduapp/game1.dart';
-import 'package:flutter_app/eduapp/gameSimulation1.dart';
 
 class GamesScreen extends StatefulWidget {
   static String id = 'games_screen';

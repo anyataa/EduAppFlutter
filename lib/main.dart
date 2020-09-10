@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/eduapp/gameSimulation1.dart';
+import 'package:flutter_app/eduapp/GamesAr.dart';
 import 'package:flutter_app/eduapp/games.dart';
 import 'package:flutter_app/eduapp/lessons.dart';
 import 'package:flutter_app/eduapp/login.dart';
+import 'package:flutter_app/eduapp/modulJangka.dart';
 import 'package:flutter_app/eduapp/register.dart';
 import 'package:flutter_app/eduapp/welcome.dart';
 import 'package:flutter_app/eduapp/home.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(primaryColor: Color(0xff4f73b6)),
       initialRoute: WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => WelcomeScreen(),
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
         LessonContentScreen.id: (context) => LessonContentScreen(),
         GamesScreen.id: (context) => GamesScreen(),
         ColorGame.id: (context) => ColorGame(),
+        GamesAr.id: (context) => GamesAr(),
+        JangkaSorong.id: (context) => JangkaSorong()
       },
       home: WelcomeScreen(),
     );

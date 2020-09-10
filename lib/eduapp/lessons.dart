@@ -11,8 +11,8 @@ class _LessonsScreenState extends State<LessonsScreen> {
   @override
   Widget build(BuildContext context) {
     final List<String> mapel = <String>[
-      'Match the component',
-      'Automasi dan Robotika',
+      'Dasar Dasar Otomotif',
+      'Pekerjaan Dasar Teknik Mesin',
       'Mekanika Teknik',
       'Fisika',
       'Matematika'
@@ -24,7 +24,7 @@ class _LessonsScreenState extends State<LessonsScreen> {
       ),
       body: Column(
         children: <Widget>[
-          Expanded(child: Image.asset('images/lessonScreen.png')),
+          Expanded(child: Image.asset('images/lesson.png')),
           Expanded(
             flex: 2,
             child: Container(
@@ -39,12 +39,20 @@ class _LessonsScreenState extends State<LessonsScreen> {
                     },
                     padding: EdgeInsets.symmetric(horizontal: 2),
                     child: Container(
-                      height: 50,
-                      color: Colors.blue[colorCodes[index]],
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(9.0),
+                        ),
+                        color: Color(0xff4f73b6),
+                      ),
+                      height: 75,
                       child: Center(
                         child: Text(
                           mapel[index],
-                          style: TextStyle(color: Colors.black),
+                          style: TextStyle(
+                            fontSize: 18.0,
+                            color: Colors.white,
+                          ),
                         ),
                       ),
                     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/eduapp/GamesAr.dart';
 import 'package:flutter_app/eduapp/games.dart';
 import 'package:flutter_app/eduapp/lessons.dart';
 
@@ -13,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xff3080EB),
+          backgroundColor: Color(0xff4f73b6),
         ),
         body: CustomScrollView(
           primary: false,
@@ -45,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             style: TextStyle(
                               fontSize: 20.0,
                               fontWeight: FontWeight.bold,
-                              color: Color(0xff3080EB),
+                              color: Color(0xff4f73b6),
                             ),
                           ),
                           Padding(
@@ -53,7 +54,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 const EdgeInsets.symmetric(horizontal: 80.0),
                             child: Divider(
                               thickness: 3.0,
-                              color: Color(0xff3080EB),
+                              color: Color(0xff4f73b6),
                             ),
                           ),
                           Padding(
@@ -76,20 +77,27 @@ class _HomeScreenState extends State<HomeScreen> {
                                       SizedBox(
                                         height: 20,
                                       ),
-                                      Container(
-                                        child: Material(
-                                          color: Colors.white,
-                                          child: Center(
-                                            child: Ink(
-                                              decoration: const ShapeDecoration(
-                                                color: Color(0xff3080EB),
-                                                shape: CircleBorder(),
-                                              ),
-                                              child: IconButton(
-                                                icon: Icon(Icons.videocam),
-                                                color: Colors.white,
-                                                iconSize: 40.0,
-                                                onPressed: () {},
+                                      FlatButton(
+                                        onPressed: () {
+                                          Navigator.pushNamed(
+                                              context, GamesAr.id);
+                                        },
+                                        child: Container(
+                                          child: Material(
+                                            color: Colors.white,
+                                            child: Center(
+                                              child: Ink(
+                                                decoration:
+                                                    const ShapeDecoration(
+                                                  color: Color(0xff4f73b6),
+                                                  shape: CircleBorder(),
+                                                ),
+                                                child: IconButton(
+                                                  icon: Icon(Icons.videocam),
+                                                  color: Colors.white,
+                                                  iconSize: 40.0,
+                                                  onPressed: () {},
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -117,7 +125,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         child: Center(
                                           child: Ink(
                                             decoration: const ShapeDecoration(
-                                              color: Color(0xff3080EB),
+                                              color: Color(0xff4f73b6),
                                               shape: CircleBorder(),
                                             ),
                                             child: IconButton(

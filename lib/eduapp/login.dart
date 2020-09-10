@@ -13,7 +13,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff3080EB),
         title: Text('Back to main page'),
       ),
       body: SingleChildScrollView(
@@ -43,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         fontWeight: FontWeight.w900,
                         fontFamily: 'Lobster',
                         color: Color(
-                          0xff3080EB,
+                          0xff4f73b6,
                         ),
                       ),
                     ),
@@ -85,7 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     vertical: 20,
                     horizontal: 16,
                   ),
-                  fillColor: Color(0xff737476),
+                  fillColor: Color(0xff4f73b6),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
                 ),
@@ -108,7 +107,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                 child: Material(
                   elevation: 5.0,
-                  color: Color(0xff3080EB),
+                  color: Color(0xff4f73b6),
                   borderRadius: BorderRadius.circular(5.0),
                   child: MaterialButton(
                     onPressed: () {
