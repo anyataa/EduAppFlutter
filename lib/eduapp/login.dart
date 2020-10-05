@@ -13,7 +13,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Back to main page'),
+        title: Text('Kembali ke halaman pembuka'),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Center(
-                    child: Text('open the whole new world of learning'),
+                    child: Text('Menjelajahi cara pembelajaran baru'),
                   ),
                 ],
               ),
@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   //do something
                 },
                 decoration: InputDecoration(
-                  hintText: 'Enter your email or Username',
+                  hintText: 'Masukan Email atau Nama Pengguna',
                   contentPadding: EdgeInsets.symmetric(
                     vertical: 20,
                     horizontal: 16,
@@ -97,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   //do something
                 },
                 decoration: InputDecoration(
-                  hintText: 'Enter your password',
+                  hintText: 'Masukan kata sandi',
                   fillColor: Color(0xff737476),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10.0))),
@@ -128,8 +128,8 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {
                     Navigator.pushNamed(context, RegisterScreen.id);
                   },
-                  child: Center(
-                      child: Text('Dont have any account? Register instead'))),
+                  child:
+                      Center(child: Text('Belum punya akun? Daftar di sini'))),
             ],
           ),
         ),

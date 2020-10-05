@@ -1,21 +1,21 @@
 PODS:
-  - arkit_plugin (0.0.1):
-    - Flutter
   - Flutter (1.0.0)
+  - url_launcher (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
-  - arkit_plugin (from `.symlinks/plugins/arkit_plugin/ios`)
   - Flutter (from `Flutter`)
+  - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
 
 EXTERNAL SOURCES:
-  arkit_plugin:
-    :path: ".symlinks/plugins/arkit_plugin/ios"
   Flutter:
     :path: Flutter
+  url_launcher:
+    :path: ".symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
-  arkit_plugin: 3e42571e8be84adabb8a178bd51c22fa981e16bd
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  url_launcher: 6fef411d543ceb26efce54b05a0a40bfd74cbbef
 
 PODFILE CHECKSUM: 098b2a4abb4dd5a230a812c07441ecd88fa7ffdf
 

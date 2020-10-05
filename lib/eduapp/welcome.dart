@@ -31,9 +31,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
                     fontFamily: 'Lobster',
-                    color: Color(
-                      0xff3080EB,
-                    ),
+                    color: Color(0xff4f73b6),
                   ),
                 ),
                 Text(
@@ -54,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             ),
             Center(
               child: Text(
-                'Brings the whole new learning experience',
+                'Pengalaman belajar dengan cara baru',
                 style: TextStyle(
                   color: Color(
                     0xff737476,

@@ -13,8 +13,7 @@ class _RegisterScreen extends State<RegisterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xff3080EB),
-        title: Text('Back to main page'),
+        title: Text('Kembali ke halaman pembuka'),
       ),
       body: Center(
         child: SingleChildScrollView(
@@ -40,13 +39,10 @@ class _RegisterScreen extends State<RegisterScreen> {
                       Text(
                         'Sign',
                         style: TextStyle(
-                          fontSize: 45.0,
-                          fontWeight: FontWeight.w900,
-                          fontFamily: 'Lobster',
-                          color: Color(
-                            0xff3080EB,
-                          ),
-                        ),
+                            fontSize: 45.0,
+                            fontWeight: FontWeight.w900,
+                            fontFamily: 'Lobster',
+                            color: Color(0xff4f73b6)),
                       ),
                       Text(
                         'Up',
@@ -66,7 +62,7 @@ class _RegisterScreen extends State<RegisterScreen> {
                   height: 5.0,
                 ),
                 Center(
-                  child: Text('open the whole new world of learning'),
+                  child: Text('Menjelajahi cara pembelajaran baru'),
                 ),
                 SizedBox(
                   height: 20.0,
@@ -76,7 +72,7 @@ class _RegisterScreen extends State<RegisterScreen> {
                     //do something
                   },
                   decoration: InputDecoration(
-                    hintText: 'Enter your email',
+                    hintText: 'Masukan Email ',
                     contentPadding: EdgeInsets.symmetric(
                       vertical: 20,
                       horizontal: 16,
@@ -94,7 +90,7 @@ class _RegisterScreen extends State<RegisterScreen> {
                     //do something
                   },
                   decoration: InputDecoration(
-                    hintText: 'Enter your password',
+                    hintText: 'Masukan kata sandi',
                     contentPadding: EdgeInsets.symmetric(
                       vertical: 20,
                       horizontal: 16,
@@ -112,7 +108,7 @@ class _RegisterScreen extends State<RegisterScreen> {
                     //do something
                   },
                   decoration: InputDecoration(
-                    hintText: 'Confirm your password',
+                    hintText: 'Konfirmasi kata sandi',
                     fillColor: Color(0xff737476),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(Radius.circular(10.0))),
@@ -122,14 +118,14 @@ class _RegisterScreen extends State<RegisterScreen> {
                   padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
                   child: Material(
                     elevation: 5.0,
-                    color: Color(0xff3080EB),
+                    color: Color(0xff4f73b6),
                     borderRadius: BorderRadius.circular(5.0),
                     child: MaterialButton(
                       onPressed: () {
                         Navigator.pushNamed(context, HomeScreen.id);
                       },
                       child: Text(
-                        'Register',
+                        'Daftar',
                         style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
@@ -144,9 +140,8 @@ class _RegisterScreen extends State<RegisterScreen> {
                     onPressed: () {
                       Navigator.pushNamed(context, LoginScreen.id);
                     },
-                    child: Center(
-                        child:
-                            Text('Already have an acoount? Log in instead'))),
+                    child:
+                        Center(child: Text('Sudah punya akun? Masuk di sini'))),
               ],
             ),
           ),
