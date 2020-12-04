@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/eduapp/navigation.dart';
+
 import 'package:flutter_app/lessons/PengelasanPemotonganPengecoran/lasOksi.dart';
 import 'package:flutter_app/lessons/PengelasanPemotonganPengecoran/lasSmaw.dart';
 
@@ -190,7 +190,7 @@ class _PengelasanLogamState extends State<PengelasanLogam> {
           )
         ],
       ),
-      bottomNavigationBar: NavigationBar(),
+//      bottomNavigationBar: NavigationBar(),
     );
   }
 }

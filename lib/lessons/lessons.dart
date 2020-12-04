@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/lessons/lessonContent.dart';
 import 'package:flutter_app/lessons/lessonView.dart';
+import 'package:flutter_app/lessons/materi10.dart';
 
 class LessonsScreen extends StatefulWidget {
   static String id = 'lessons_screen';
@@ -19,10 +20,10 @@ class _LessonsScreenState extends State<LessonsScreen> {
     ];
     final List<String> tujuan = <String>[
       KompetensiView.id,
-      '[empty]',
-      '[empty]',
-      '[empty]',
-      '[empty]'
+      Materi10.id,
+      Materi10.id,
+      Materi10.id,
+      Materi10.id
     ];
     final List<int> colorCodes = <int>[200, 300, 100, 200, 300];
     return Scaffold(

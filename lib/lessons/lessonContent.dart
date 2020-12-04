@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/lessons/ModulMikrometer.dart';
-import 'package:flutter_app/lessons/lessons.dart';
-import 'package:flutter_app/eduapp/login.dart';
+
 import 'package:flutter_app/lessons/modulJangka.dart';
 
 class LessonContentScreen extends StatefulWidget {

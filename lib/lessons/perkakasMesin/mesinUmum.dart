@@ -153,6 +153,9 @@ class _MesinUmumState extends State<MesinUmum> {
                       ),
                     ),
                   ),
+                  SizedBox(
+                    height: 50,
+                  )
                 ],
               ),
             ),

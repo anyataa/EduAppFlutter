@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:fancy_bottom_navigation/fancy_bottom_navigation.dart';
-import 'package:flutter_app/games/games.dart';
-import 'package:flutter_app/eduapp/home.dart';
+
 import 'package:flutter_app/eduapp/navigation.dart';
-import 'package:flutter_app/eduapp/Penilaian.dart';
-import 'package:flutter_app/lessons/lessonView.dart';
+import 'package:flutter_app/lessons/K3L/K3L%20self%20regulatory.dart';
 
 class KeseehatanDanKeselamatan extends StatefulWidget {
   static String id = 'KesehatanDanKeselamatan_screen';
@@ -317,10 +314,63 @@ class _KeseehatanDanKeselamatanState extends State<KeseehatanDanKeselamatan> {
                           ),
                           textAlign: TextAlign.left,
                         ),
+                        Text(
+                          'Menurutmu?',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        Text(
+                          'Apakah uraian ragam APD yang diberikan sudah cukup? Apakah ragam APD pada setiap kegiatan kerja selalu sama? apakah APD untuk kegiatan pengecoran akan sama dengan APD untuk kegiatan pengelasan?',
+                          style: TextStyle(
+                            fontSize: 15,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          'Penggunaan APD pada semua kegiatan kerja apakah akan selalu sama? Jelaskan alasan dari jawabanmu di bawah ini!',
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        _buildTextField(),
+                        Padding(
+                          padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+                          child: Material(
+                            elevation: 5.0,
+                            color: Color(0xff4f73b6),
+                            borderRadius: BorderRadius.circular(5.0),
+                            child: MaterialButton(
+                              onPressed: () {
+                                Navigator.pushNamed(context, K3LRegulatory.id);
+                              },
+                              child: Text(
+                                'Serahkan jawaban',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 15.0,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                 ),
+                SizedBox(
+                  height: 50,
+                )
               ],
             )
           ],
@@ -329,4 +379,21 @@ class _KeseehatanDanKeselamatanState extends State<KeseehatanDanKeselamatan> {
       bottomNavigationBar: NavigationBar(),
     );
   }
+}
+
+Widget _buildTextField() {
+  final maxLines = 5;
+
+  return Container(
+    margin: EdgeInsets.all(12),
+    height: maxLines * 24.0,
+    child: TextField(
+      maxLines: maxLines,
+      decoration: InputDecoration(
+        hintText: "Tuliskan jawabanmu di sini",
+        fillColor: Colors.grey[100],
+        filled: true,
+      ),
+    ),
+  );
 }

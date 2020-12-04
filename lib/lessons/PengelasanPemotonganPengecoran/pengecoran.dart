@@ -181,6 +181,9 @@ class _PengecoranLogamState extends State<PengecoranLogam> {
                     ],
                   ),
                 ),
+                SizedBox(
+                  height: 50,
+                )
               ],
             ),
           )

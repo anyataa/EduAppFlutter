@@ -272,6 +272,9 @@ class _PerkakasBertenagaState extends State<PerkakasBertenaga> {
                       ],
                     ),
                   ),
+                ),
+                SizedBox(
+                  height: 50,
                 )
               ],
             )

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/eduapp/navigation.dart';
 import 'simulatorMikrometer100.dart';
 
 class ModulMikrometer extends StatefulWidget {
@@ -137,11 +138,15 @@ class _ModulMikrometerState extends State<ModulMikrometer> {
                     SimulatorMikrometer100()
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 50,
               )
             ],
           )
         ],
       ),
+      bottomNavigationBar: NavigationBar(),
     );
   }
 }

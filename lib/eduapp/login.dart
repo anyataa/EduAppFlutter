@@ -128,8 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () {
                     Navigator.pushNamed(context, RegisterScreen.id);
                   },
-                  child:
-                      Center(child: Text('Belum punya akun? Daftar di sini'))),
+                  child: Center(child: Text('Belum punya akun? Buat di sini'))),
             ],
           ),
         ),

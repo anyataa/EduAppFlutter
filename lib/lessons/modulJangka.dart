@@ -162,6 +162,9 @@ class _JangkaSorongState extends State<JangkaSorong> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 50,
+              )
             ],
           ),
         ],

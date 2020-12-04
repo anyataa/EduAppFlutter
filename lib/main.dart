@@ -6,6 +6,7 @@ import 'package:flutter_app/games/game3.dart';
 import 'package:flutter_app/games/game4.dart';
 
 import 'package:flutter_app/games/games.dart';
+import 'package:flutter_app/lessons/K3L/K3L%20self%20regulatory.dart';
 import 'package:flutter_app/lessons/K3L/K3L.dart';
 import 'package:flutter_app/lessons/PengelasanPemotonganPengecoran/bulkDeformation.dart';
 import 'package:flutter_app/lessons/PengelasanPemotonganPengecoran/lasOksi.dart';
@@ -22,6 +23,7 @@ import 'package:flutter_app/lessons/ModulJangka3.dart';
 import 'package:flutter_app/lessons/ModulMikrometer.dart';
 import 'package:flutter_app/lessons/lessons.dart';
 import 'package:flutter_app/eduapp/login.dart';
+import 'package:flutter_app/lessons/materi10.dart';
 import 'package:flutter_app/lessons/modulJangka.dart';
 import 'package:flutter_app/eduapp/register.dart';
 import 'package:flutter_app/eduapp/welcome.dart';
@@ -44,6 +46,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Color(0xff4f73b6)),
       initialRoute: WelcomeScreen.id,
       routes: {
@@ -82,7 +85,9 @@ class MyApp extends StatelessWidget {
         GameSet3.id: (context) => GameSet3(),
         GameSet4.id: (context) => GameSet4(),
         SaranScreen.id: (context) => SaranScreen(),
-        AboutThisApp.id: (context) => AboutThisApp()
+        AboutThisApp.id: (context) => AboutThisApp(),
+        Materi10.id: (context) => Materi10(),
+        K3LRegulatory.id: (context) => K3LRegulatory()
       },
       home: WelcomeScreen(),
     );

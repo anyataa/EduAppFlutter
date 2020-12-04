@@ -70,6 +70,5 @@ class _MesinMillingState extends State<MesinMilling> {
         ),
       ]),
     );
-    ;
   }
 }

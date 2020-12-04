@@ -32,11 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Card(
                     child: Column(
                       children: <Widget>[
-                        SizedBox(
-                          height: 20,
-                        ),
                         Container(
-                          margin: EdgeInsets.symmetric(vertical: 10.0),
+                          margin: EdgeInsets.symmetric(vertical: 5.0),
                           child: CircleAvatar(
                             backgroundColor: Colors.white,
                             backgroundImage: AssetImage(

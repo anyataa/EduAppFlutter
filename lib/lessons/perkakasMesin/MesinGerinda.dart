@@ -163,7 +163,7 @@ class _MesinGerindaState extends State<MesinGerinda> {
                         ),
                       ),
                       SizedBox(
-                        height: 10,
+                        height: 40,
                       ),
                     ],
                   )

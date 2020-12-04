@@ -34,6 +34,5 @@ class _SimulatorMikrometer1000State extends State<SimulatorMikrometer1000> {
         ),
       ),
     );
-    ;
   }
 }
